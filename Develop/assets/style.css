@@ -17,6 +17,19 @@ body {
 #currentDay{
   margin-bottom: 10px;
 }
+
+.container {
+  text-align: center;
+  font-size: 16px;
+}
+
+.container span{
+  color: red;
+}
+
+.hide{
+  display: none;
+}
 .row {
   height: 80px;
   border-top: 1px solid white;
@@ -81,6 +94,19 @@ textarea{
 .saveBtn i:hover {
   font-size: 25px;
   transition: all .3s ease-in-out;
+}
+
+.btnContainer{
+  text-align: center;
+}
+.clearBtn{
+  font-size: 20px;
+  text-align: center;
+  width: 25%;
+  height: 40px;
+}
+.clearBtn:active {
+  background-color: #06AED5;
 }
 
 @media only screen and (max-width: 678px) {
