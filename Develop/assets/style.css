@@ -14,6 +14,16 @@ body {
   padding: 0px;
 }
 
+.title{
+  font-size:4.5rem;
+  font-weight:300;
+  line-height:1.2;
+}
+
+.belowTitle{
+  font-size:1.25rem;
+  font-weight:300
+}
 #currentDay{
   margin-bottom: 10px;
 }
@@ -93,6 +103,7 @@ textarea{
   font-size: 20px;
 }
 
+/*when you hover over the icon, it'll expand and resize when you hover off*/
 .saveBtn i:hover {
   font-size: 25px;
   transition: all .3s ease-in-out;
@@ -104,8 +115,9 @@ textarea{
 .clearBtn{
   font-size: 20px;
   text-align: center;
-  width: 25%;
+  width: 50%;
   height: 40px;
+  border-radius: 15px;
 }
 .clearBtn:active {
   background-color: #06AED5;
@@ -114,10 +126,100 @@ textarea{
 /*for different screen widths*/
 @media only screen and (max-width: 678px) {
   body{
-    font-size: 12px;
+    font-size: 14px;
   }
-  #title{
+  .title{
+    font-size: 3.5rem;
+    font-weight:250;
+    line-height: 1;
+  }
+  .belowTitle{
+    font-size: 1rem;
+    font-weight:125;
+  }
+  .jumbotron {
+    border-bottom: 7px solid black;
+  }
+  #description{
+    width: 76%;
+  }
+  .time-block{
+    width: 11%;
+  }
+  .saveBtn{
+    width: 11%;
+  }
+  .clearBtn{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .title{
+    font-size: 2.75rem;
+  }
+  #description{
+    width: 74%;
+  }
+  .time-block{
+    width: 12%;
+  }
+  .saveBtn{
+    width: 12%;
+  }
+  .clearBtn{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 455px){
+  .title{
+    font-size: 2.25;
+  }
+  .belowTitle{
+    font-size: .9rem;
+  }
+  #description{
+    width: 70%;
+  }
+  .time-block{
+    width: 14%;
+  }
+  .saveBtn{
+    width: 14%;
+  }
+  .clearBtn{
+    width: 60%;
+  }
+
+}
+
+/*Anything below this is basically a mobile device*/
+@media only screen and (max-width: 400px){
+  .title{
+    font-size: 1.75;
+  }
+  .belowTitle{
+    font-size: .8rem;
+  }
+  .row{
+    height: 60px;
+  }
+  #description{
+    width: 66%;
+  }
+  .time-block{
+    width: 16%;
+  }
+  .saveBtn{
+    width: 16%;
+  }
+  .saveBtn i{
+    font-size: 16px;
+  }
+  .saveBtn i:hover {
     font-size: 20px;
   }
+  
 }
 
